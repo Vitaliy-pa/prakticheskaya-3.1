@@ -1,0 +1,15 @@
+﻿using System.Globalization;
+
+
+        Console.Write("Введите вещественное число A:");
+        double a = double.Parse(Console.ReadLine()); 
+        Console.Write("Введите целое число N: ");
+        int n = int.Parse(Console.ReadLine());
+        if (n <= 0)
+            throw new ArgumentOutOfRangeException("N", "Ожидалось значение N больше нуля.");
+        double sum = 0;
+        for (int i = 0; i <= n; i++)
+            sum += Math.Pow(a, n);
+        Console.WriteLine("Сумма ряда: {0}", sum);
+    
+
